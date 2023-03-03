@@ -9,6 +9,7 @@
     <modules>
         <module>studyJdk</module>
         <module>studyDesign</module>
+        <module>studySpringBoot</module>
     </modules>
     <packaging>pom</packaging>
 
