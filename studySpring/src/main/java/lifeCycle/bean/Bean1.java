@@ -28,7 +28,8 @@ public class Bean1 implements InitializingBean, DisposableBean {
     }
 
 
-    public void value(@Value("${server.port}") String port) {
+    @Autowired
+    public void version(@Value("${java.version}") String version) {
         System.out.println("依赖注入:@Value");
     }
 
