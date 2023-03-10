@@ -20,9 +20,6 @@
 <!--        <mylabel:label id="userLabel" name="wangjinyu" sex="男" height="183"/>-->
     </bean>
 
-    <bean class="annoation.RegisterResolvableDependency" >
-
-    </bean>
 
 
     <bean id="lookUp" class="lookUp.LookUp" >
@@ -55,7 +52,6 @@
 
     <mylabel:label id="label" name="zhangsan" sex="男" height="183"/>
 
-    <context:component-scan base-package="annoation"/>
-
     <bean id="testEvent" class="event.TestLister"></bean>
+    <bean id="testEvent2" class="event.TestLister2"></bean>
 </beans>
