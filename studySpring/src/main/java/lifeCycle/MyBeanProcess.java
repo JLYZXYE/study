@@ -7,13 +7,17 @@ import org.springframework.beans.factory.InitializingBean;
 import org.springframework.beans.factory.config.*;
 import org.springframework.beans.factory.support.BeanDefinitionRegistry;
 import org.springframework.beans.factory.support.BeanDefinitionRegistryPostProcessor;
+import org.springframework.context.annotation.ComponentScan;
+import org.springframework.stereotype.Component;
 
 import java.beans.PropertyDescriptor;
 
+@Component
 public class MyBeanProcess implements BeanDefinitionRegistryPostProcessor, BeanFactoryPostProcessor, InstantiationAwareBeanPostProcessor, BeanPostProcessor, DestructionAwareBeanPostProcessor {
 
     @Override
     public void postProcessBeanDefinitionRegistry(BeanDefinitionRegistry registry) throws BeansException {
+        System.out.println("MyBeanProcess");
         System.out.println("bean注册：BeanDefinitionRegistryPostProcessor#postProcessBeanDefinitionRegistry。 使用场景mybatis整合spring");
     }
 
