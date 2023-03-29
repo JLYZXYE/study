@@ -18,7 +18,7 @@ import lookUp.User;
  */
 public class AppTest {
     /**
-     * Rigorous Test :-)
+     * Rigorous StaticMethodMatcherPointcutTest :-)
      */
     @Test
     public void shouldAnswerWithTrue() {
