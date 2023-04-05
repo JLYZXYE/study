@@ -2,6 +2,7 @@ package aop.order;
 
 import org.aspectj.lang.annotation.Aspect;
 import org.aspectj.lang.annotation.Before;
+import org.aspectj.lang.annotation.DeclareParents;
 import org.springframework.aop.Advisor;
 import org.springframework.aop.aspectj.annotation.AnnotationAwareAspectJAutoProxyCreator;
 import org.springframework.aop.framework.ProxyFactory;
@@ -29,6 +30,15 @@ public class Order {
         public void before2(int x) {
             System.out.printf("before2(%d)%n", x);
         }
+
+        @Before("execution(* print(..))") //
+        public void before3() {
+            System.out.println("print before");
+        }
+
+        @DeclareParents(value = "aop.order.Order.Target", defaultImpl = IntroductionImp.class)
+        //引介，使Target具备Introduction接口
+        public Introduction introductionImp;
     }
 
     static class Target {
