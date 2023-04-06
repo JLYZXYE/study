@@ -1,4 +1,4 @@
-package annotationFormatterFactory;
+package convert.formatter.annotationFormatterFactory;
 
 import org.springframework.format.Formatter;
 import org.springframework.format.Parser;

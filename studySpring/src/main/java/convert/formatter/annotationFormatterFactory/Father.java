@@ -1,4 +1,4 @@
-package annotationFormatterFactory;
+package convert.formatter.annotationFormatterFactory;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
