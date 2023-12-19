@@ -10,6 +10,7 @@
         <module>studyJdk</module>
         <module>studyDesign</module>
         <module>studySpring</module>
+        <module>studyJVM</module>
         <module>studySpringBoot</module>
     </modules>
 
