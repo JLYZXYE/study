@@ -13,6 +13,7 @@
         <module>studyJVM</module>
         <module>studySpringBoot</module>
         <module>studyBeanValidation</module>
+        <module>studyDate</module>
     </modules>
 
     <!--顶层项目指定打包方式-->
